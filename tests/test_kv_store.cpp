@@ -143,7 +143,7 @@ void test_thread_safety() {
 void test_wal_recovery() {
     std::cout << "Running test_wal_recovery..." << std::endl;
     
-    const std::string wal_path = "/tmp/test_wal.log";
+    const std::string wal_path = "test_wal.log";
     
     // Remove old WAL file if it exists
     std::remove(wal_path.c_str());

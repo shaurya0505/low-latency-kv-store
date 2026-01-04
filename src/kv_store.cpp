@@ -144,6 +144,7 @@ bool KVStore::recover() {
 }
 
 void KVStore::touch(const std::string& key) {
+    // Note: This method must be called while mutex_ is already held
     auto it = cache_.find(key);
     if (it != cache_.end()) {
         lru_list_.erase(it->second.lru_iter);

@@ -33,6 +33,8 @@ Makefile
 
 # WAL files
 *.log
+demo_wal.log
+test_wal.log
 
 # Testing artifacts
 Testing/
